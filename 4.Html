@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>婦女胎教設計</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 主要頁面內容 -->
+    <header>
+        <h1>婦女胎教 APP</h1>
+        <nav>
+            <ul>
+                <li><a href="#music">胎教音樂</a></li>
+                <li><a href="#exercise">靜心練習</a></li>
+                <li><a href="#schedule">日程安排</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="music">
+        <h2>胎教音樂</h2>
+        <p>選擇胎教音樂，幫助胎兒聽覺發展。</p>
+        <audio controls>
+            <source src="胎教音樂.mp3" type="audio/mp3">
+            您的瀏覽器不支持音訊播放。
+        </audio>
+    </section>
+
+    <section id="exercise">
+        <h2>靜心練習</h2>
+        <p>放鬆心情，與寶寶進行情感連結。</p>
+        <button onclick="startBreathingExercise()">開始深呼吸練習</button>
+        <p id="exercise-status"></p>
+    </section>
+
+    <section id="schedule">
+        <h2>日程安排</h2>
+        <p>設置每日的胎教時間。</p>
+        <label for="time">選擇時間：</label>
+        <input type="time" id="time" name="time">
+        <button onclick="setSchedule()">設置時間</button>
+        <p id="schedule-status"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 婦女胎教 APP</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
